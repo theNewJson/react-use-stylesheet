@@ -1,0 +1,45 @@
+{
+  "name": "react-use-stylesheet",
+  "version": "0.1.0",
+  "main": "dist/use-stylesheet.cjs.js",
+  "module": "dist/use-stylesheet.esm.js",
+  "browser": "dist/use-stylesheet.umd.js",
+  "files": ["dist"],
+  "author": "theNewJson",
+  "license": "MIT",
+  "dependencies": {
+    "typescript": "^4.5.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.7",
+    "@babel/preset-env": "^7.16.7",
+    "@babel/preset-react": "^7.16.7",
+    "@babel/preset-typescript": "^7.16.7",
+    "@types/react": "^17.0.38",
+    "@types/react-dom": "^17.0.11",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "rollup": "^2.63.0",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-livereload": "^2.0.5",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-replace": "^2.2.0",
+    "rollup-plugin-serve": "^1.1.0"
+  },
+  "peerDependencies": {
+    "react": ">= 16.8.0",
+    "react-dom": ">= 16.8.0"
+  },
+  "resolutions": {
+    "**/react": "^16.14.0",
+    "**/react-dom": "^16.14.0"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "demo:dev": "rollup -c -w --environment ENV=demo",
+    "dev": "rollup -c -w",
+    "test": "node test/test.js",
+    "pretest": "npm run build"
+  }
+}
