@@ -2,7 +2,6 @@ import { useEffect } from 'react';
 
 const useCustomStyle = (url?: string) => {
   useEffect(() => {
-    console.log('234')
     if (url) {
       const link = document.createElement('link');
 
