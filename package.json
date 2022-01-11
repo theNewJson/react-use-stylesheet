@@ -1,6 +1,7 @@
 {
   "name": "react-use-stylesheet",
   "version": "0.1.0",
+  "description": "A react custom hook to inject css stylesheet during run time.",
   "main": "dist/use-stylesheet.cjs.js",
   "module": "dist/use-stylesheet.esm.js",
   "browser": "dist/use-stylesheet.umd.js",
